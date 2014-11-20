@@ -1,0 +1,12 @@
+<Plugin network>
+<%- if @collectd_profile == 'server' -%>
+  Listen "<%= scope['::ipaddress'] %>" "<%= @collectd_port %>"
+<%- elsif @collectd_profile == 'agent' -%>
+  Server "<%= @collectd_server %>" "<%= @collectd_port %>"
+  TimeToLive 128
+<%- else -%>
+  scope.function_fail(["Cannot parse collectd_plugin-network.conf.erb for @collectd_profile='<%= @collectd_profile %>'"])
+<%- end -%>
+  MaxPacketSize 1024
+  CacheFlush 1800
+</Plugin>

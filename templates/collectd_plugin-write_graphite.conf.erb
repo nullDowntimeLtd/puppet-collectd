@@ -1,0 +1,11 @@
+<Plugin "write_graphite">
+  <Carbon>
+    Host "<%= @collectd_carbon_host %>"
+    Port "<%= @collectd_carbon_port %>"
+    EscapeCharacter "_"
+    SeparateInstances true
+    StoreRates false
+    AlwaysAppendDS true
+  </Carbon>
+</Plugin>
+
