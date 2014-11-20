@@ -1,4 +1,4 @@
-pupet-collectd
+puppet-collectd
 ==============
 
 Hiera heavy puppet module to install and configure collectd
