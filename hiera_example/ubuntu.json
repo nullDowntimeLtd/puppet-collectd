@@ -1,0 +1,14 @@
+{
+  "collectd_server_package" : "collectd",
+  "collectd_agent_package" : "collectd",
+  "collectd_service" : "collectd",
+  "collectd_config" : "/etc/collectd/collectd.conf",
+  "collectd_include_dir" : "/etc/collectd/collectd.d",
+  "collectd_base_dir" : "/var/lib/collectd",
+  "collectd_plugin_dir" : "/usr/lib/collectd",
+  "collectd_pid_file" : "/var/run/collectd.pid",
+  "collectd_types_db" : "/usr/share/collectd/types.db",
+  "collectd_plugins" : {
+    "disk-linux" : {}
+  }
+}

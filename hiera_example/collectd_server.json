@@ -1,0 +1,6 @@
+{
+  "collectd_profile" : "server",
+  "collectd_plugins" : {
+    "write_graphite" : {}
+  }
+}

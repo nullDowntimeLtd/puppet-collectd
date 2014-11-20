@@ -1,0 +1,23 @@
+{
+  "collectd_ensure" : true,
+  "collectd_server" : "collectd-server.domain.tld",
+  "collectd_port" : "25826",
+  "collectd_carbon_host" : "carbon-relay.domain.tld",
+  "collectd_carbon_port" : "2003",
+  "collectd_profile" : "agent",
+  "collectd_data_dir" : "/data/collectd/rrd",
+  "collectd_data_dir_parents" : [ "/data", "/data/collectd" ],
+  "collectd_plugins" : {
+    "cpu" : {},
+    "df" : {},
+    "interface" : {},
+    "load" : {},
+    "memory" : {},
+    "network" : {},
+    "ntpd" : {},
+    "swap" : {},
+    "tcpconns" : {},
+    "unixsock" : {}
+  },
+  "graphite_host" : "graphite.domain.tld"
+}

@@ -1,0 +1,10 @@
+---
+:backends:
+  - json
+:json:
+  :datadir: "/etc/puppet/hiera"
+:hierarchy:
+  - "%{::fqdn}"
+  - "%{::role}"
+  - "%{::operatingsystem}"
+  - global
