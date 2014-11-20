@@ -1,4 +1,5 @@
 {
+  "root_group" : "root",
   "collectd_ensure" : true,
   "collectd_server" : "collectd-server.domain.tld",
   "collectd_port" : "25826",
